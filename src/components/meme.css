@@ -1,8 +1,4 @@
-.main {
-  padding: 3em;
-}
-
-.meme-form {
+.meme {
   display: grid;
   grid-template-areas: 
     'top-input bottom-input'
@@ -11,7 +7,7 @@
   gap: 17px
 }
 
-.meme-form > input {
+.meme > input {
   border: 1px solid #D5d4d8;
   border-radius: 5px;
   font-family: "Karla", sans-serif;
