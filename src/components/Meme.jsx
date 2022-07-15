@@ -1,14 +1,14 @@
 import memesData from '../memesData'
 import './meme.css'
 
-const getRandomImage = () => {
-  const memesArray = memesData.data.memes
-  const randomNumber = Math.floor(Math.random() * memesArray.length)
-  const imageUrl = memesArray[randomNumber].url
-  console.log(imageUrl)
-}
-
 function Meme() {
+  const getRandomImage = () => {
+    const memesArray = memesData.data.memes
+    const randomNumber = Math.floor(Math.random() * memesArray.length)
+    const imageUrl = memesArray[randomNumber].url
+    console.log(imageUrl)
+  }
+
   return (
     <div className="meme">
       <input type="text" placeholder="Top text" className="meme-top-input" />
