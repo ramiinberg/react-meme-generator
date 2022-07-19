@@ -1,4 +1,4 @@
-.meme {
+.form {
   display: grid;
   grid-template-areas: 
     'top-input bottom-input'
@@ -7,22 +7,22 @@
   gap: 17px
 }
 
-.meme > input {
+.form > input {
   border: 1px solid #D5d4d8;
   border-radius: 5px;
   font-family: "Karla", sans-serif;
   text-indent: 5px;
 }
 
-.meme-top-input {
+.form-top-input {
   grid-area: top-input;
 }
 
-.meme-bottom-input {
+.form-bottom-input {
   grid-area: bottom-input;
 }
 
-.meme-new-image {
+.form-new-image {
   grid-area: meme-button;
   font-family: "Karla", sans-serif;
   background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
@@ -31,6 +31,44 @@
   cursor: pointer;
 }
 
+.meme {
+  position: relative;
+  border-radius: 3px;
+}
+
 .meme-image {
   max-width: 100%;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
