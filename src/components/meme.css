@@ -32,8 +32,11 @@
 }
 
 .meme {
+  margin-top: 1em;
   position: relative;
   border-radius: 3px;
+  display: flex;
+  justify-content: center;
 }
 
 .meme-image {
